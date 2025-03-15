@@ -1,5 +1,14 @@
 # `value_iteration`
 
+- [Description](#description)
+- [Installation](#installation)
+- [Example](#example)
+  - [Simple 2-state MDP example](#simple-2-mdp-example)
+- [License](#license)
+- [GitHub Repository](#github-repository)
+- [Contributors](#contributors)
+- [References](#references)
+
 ## **Description**
 
 The value_iteration python package provides an implementation of the value iteration algorithm. This algorithm is a well-known solution method for finding the optimal policy of a Markov Decision Process (MDP). 
@@ -105,3 +114,27 @@ for s in S: # print results
     print(f"If {s}, then Sam should {optimal_policy[s]}.")
 
 ```
+
+## License
+
+Copyright (C) 2025 Niharika Reddy Peddinenikalva
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.txt>.
+
+## GitHub Repository
+
+Source files for the packages can be found at
+<https://github.com/turtlesoul25/value_iteration>
+
+## Contributors
+
+- Niharika Reddy Peddinenikalva: [email](mailto:n.peddinenikalva@lancaster.ac.uk) (**Author**)
+  (**Maintainer**) (**Creator**) (**Translator**)
+
+## References
+
+Poole, D. L., & Mackworth, A. K. (2017). Artificial Intelligence: Foundations of Computational Agents (2nd ed.). Cambridge: Cambridge University Press.
