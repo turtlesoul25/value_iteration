@@ -15,7 +15,7 @@ The value_iteration python package provides an implementation of the value itera
 
 For a range of problems that can be modelled as MDPs, the value iteration algorithm finds the optimal policy by maximising a value function iteratively. 
 
-To learn more about MDPs and the value iteration algorithm, the user can refer to Sections [9.5](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.html) and [9.5.1](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.SS1.html) of [Artificial Intelligence: Foundations and Computational Agents 2nd edition](https://artint.info/2e/html2e/ArtInt2e.html)
+To learn more about MDPs and the value iteration algorithm, the user can refer to Sections [9.5](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.html) and [9.5.1](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.SS1.html) of [Artificial Intelligence: Foundations and Computational Agents 2nd edition](https://artint.info/2e/html2e/ArtInt2e.html).
 
 **Key Features**
 - Implements the value iteration function described by the pseudocode in Figure 9.16 within [Section 9.5.2](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.SS2.html) of [Artificial Intelligence: Foundations and Computational Agents 2nd edition](https://artint.info/2e/html2e/ArtInt2e.html).
@@ -25,9 +25,11 @@ To learn more about MDPs and the value iteration algorithm, the user can refer t
 
 ## **Installation**
 
-This python package can be installed from github with pip
+This python package can be installed from GitHub with pip.
 #### installing from github with pip
-```python -m pip install "git+https://github.com/turtlesoul25/value_iteration"```
+``` python
+python -m pip install "git+https://github.com/turtlesoul25/value_iteration"
+```
 
 ## **Example**
 
@@ -35,10 +37,10 @@ This python package can be installed from github with pip
 This example is taken from [Example 9.27](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.html#Ch9.Thmciexamplered27) from [Artificial Intelligence: Foundations and Computational Agents 2nd edition](https://artint.info/2e/html2e/ArtInt2e.html). 
 
 Suppose Sam wanted to make an informed decision about whether to party or relax over the weekend. Sam prefers to party, but is worried about getting sick. Such a problem can be modeled as an MDP with two states, _healthy_ and _sick_, and two actions, _relax_ and _party_. Thus, the set of states is 
-$$S = \{\textit{healthy}, \textit{sick} \}$$
+$$S = \{\textit{healthy}, \textit{sick} \}.$$
 
 The set of actions is 
-$$A = \{\textit{relax}, \textit{party} \}$$
+$$A = \{\textit{relax}, \textit{party} \}.$$
 
 Based on experience, Sam estimates that $P(s' \vert s, a)$ is given by 
 
@@ -117,8 +119,6 @@ for s in S: # print results
 
 ## License
 
-Copyright (C) 2025 Niharika Reddy Peddinenikalva
-
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
@@ -128,7 +128,7 @@ You should have received a copy of the GNU General Public License along with thi
 ## GitHub Repository
 
 Source files for the packages can be found at
-<https://github.com/turtlesoul25/value_iteration>
+<https://github.com/turtlesoul25/value_iteration>.
 
 ## Contributors
 
