@@ -24,4 +24,4 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "blob.html"
+homepage = "https://github.com/turtlesoul25/value_iteration"
