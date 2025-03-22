@@ -4,7 +4,7 @@
 - [Installation](#installation)
 - [Example](#example)
   - [Simple 2-state MDP example](#simple-2-mdp-example)
-  - [$n \times m$ Gridworld example](#gridworld-example)
+  - [n x m Gridworld example](#gridworld-example)
 - [License](#license)
 - [GitHub Repository](#github-repository)
 - [Contributors](#contributors)
