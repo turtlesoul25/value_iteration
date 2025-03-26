@@ -71,6 +71,8 @@ Thus, Sam always enjoys partying more than relaxing. However, Sam feels much bet
 from value_iteration import value_iteration
 S = {"sick", "healthy"} # set of states
 A = {"relax", "party"}  # set of actions
+gamma = 0.8             # Discount factor
+max_iterations = 1000   # maximum number of iterations
 def P(sp, s, a): # function to calculate transition probabilities
     if s == "healthy":
         if a == "relax":
@@ -110,7 +112,7 @@ def R(s, a): # function to calculate rewards for a state, action pair
             return 2
 
 # Implementing the value iteration algorithm to solve the MDP
-results = value_iteration(S, A, P, R, 0.8, 1000)    # implement algorithm
+results = value_iteration(S, A, P, R, gamma, max_iterations)    # implement algorithm
 optimal_policy = results["optimal_policy"]          # optimal policy
 value_function = results["value_function"]          # final value function
 
