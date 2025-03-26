@@ -2,7 +2,7 @@
 from typing import Set, Callable, Dict
 
 # Define the value iteration algorithm as a function
-def Value_iteration(S: Set, A: Set, P: Callable, R: Callable, gamma: float, max_iterations: int, 
+def value_iteration(S: Set, A: Set, P: Callable, R: Callable, gamma: float, max_iterations: int, 
                     V_init: Dict = None, theta: float = None) -> Dict:
     '''
     Implements the value iteration algorithm to solve a MDP with given
