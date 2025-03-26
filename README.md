@@ -20,8 +20,8 @@ To learn more about MDPs and the value iteration algorithm, the user can refer t
 
 **Key Features**
 - Implements the value iteration function described by the pseudocode in Figure 9.16 within [Section 9.5.2](https://artint.info/2e/html2e/ArtInt2e.Ch9.S5.SS2.html) of [Artificial Intelligence: Foundations and Computational Agents 2nd edition](https://artint.info/2e/html2e/ArtInt2e.html).
-- Includes an example of a GridWorld problem which is solved using the `value_iteration` function included in this package.
-- Can be used for any MDP with appropriate definitions of states, actions, transition probabilities, reward functions, discount factors, and termination conditions.
+- Includes an example of a Gridworld problem which is solved using the `value_iteration` function included in this package.
+- Can be used for any MDP with appropriate definitions of states, actions, transition probabilities, reward functions, discount factors, and termination conditions (maximum number of iterations or value function convergence criteria).
 
 
 ## **Installation**
@@ -29,7 +29,7 @@ To learn more about MDPs and the value iteration algorithm, the user can refer t
 This python package can be installed from GitHub with pip.
 #### installing from github with pip
 ``` python
-python -m pip install "git+https://github.com/turtlesoul25/value_iteration"
+python -m pip install "git+https://github.com/turtlesoul25/value_iteration#subdirectory=package"
 ```
 
 ## **Example**
@@ -68,6 +68,7 @@ Thus, Sam always enjoys partying more than relaxing. However, Sam feels much bet
 
 
 ``` python
+from value_iteration import value_iteration
 S = {"sick", "healthy"} # set of states
 A = {"relax", "party"}  # set of actions
 def P(sp, s, a): # function to calculate transition probabilities
@@ -109,7 +110,7 @@ def R(s, a): # function to calculate rewards for a state, action pair
             return 2
 
 # Implementing the value iteration algorithm to solve the MDP
-results = Value_iteration(S, A, P, R, 0.8, 1000)    # implement algorithm
+results = value_iteration(S, A, P, R, 0.8, 1000)    # implement algorithm
 optimal_policy = results["optimal_policy"]          # optimal policy
 value_function = results["value_function"]          # final value function
 
@@ -119,7 +120,7 @@ for s in S: # print results
 ```
 
 ### Gridworld example
-To see a more detailed example of how value iteration can be used to solve a problem in a Gridworld environment, see `Examples/Gridworld_nxm/Solving_Gridworld.ipynb` in this repository.
+To see a more detailed example of how value iteration can be used to solve a problem in a Gridworld environment, see [Examples/Gridworld_nxm/Solving_Gridworld.ipynb](https://github.com/turtlesoul25/value_iteration/tree/main/Examples/Gridworld_nxm) in this repository.
 
 ## License
 
@@ -131,8 +132,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## GitHub Repository
 
-Source files for the packages can be found at
-<https://github.com/turtlesoul25/value_iteration>.
+Source files for the packages can be found at <https://github.com/turtlesoul25/value_iteration/tree/main/package>.
 
 ## Contributors
 
