@@ -3,7 +3,7 @@ from typing import Set, Callable, Dict
 
 # Define the value iteration algorithm as a function
 def value_iteration(S: Set, A: Set, P: Callable, R: Callable, gamma: float, max_iterations: int, 
-                    V_init: Dict = None, theta: float = None) -> Dict:
+                    V_init: Dict = None, theta = None) -> Dict:
     '''
     Implements the value iteration algorithm to solve a MDP with given
     set of states and actions, transition probabilities, reward function, 
@@ -11,21 +11,21 @@ def value_iteration(S: Set, A: Set, P: Callable, R: Callable, gamma: float, max_
 
     Arguments
     -----------
-    S: set of states for the MDP.
-    A: set of actions for the MDP.
-    P: a function which calculates P(s'|s,a), the probability of transitioning
+    S: Set of states for the MDP.
+    A: Set of actions for the MDP.
+    P: A function which calculates P(s'|s,a), the probability of transitioning
         to state s' given we are in state s and execute action a.
-    R: a function which calculates R(s,a), the reward obtainined if action a is 
+    R: A function which calculates R(s,a), the reward obtainined if action a is 
         executed while in state s.
-    gamma: discount factor for calculating the next value function in the MDP.
+    gamma: Discount factor for calculating the next value function in the MDP.
     max_iterations: maximum number of iterations of value function calculations.
-    V_init: a dictionary to store the initialised values for all states.
-    theta: threshold value to check convergence of the value function 
+    V_init: A dictionary to store the initialised values for all states.
+    theta: Threshold value to check convergence of the value function 
         to ensure minimum value function update across all states per iteration.
 
     Output
     -----------
-    output_dict: dictionary containing the optimal policy dictionary and final value function dictionary for all states
+    output_dict: Dictionary containing the optimal policy dictionary and final value function dictionary for all states
     '''
 
     # Dictionaries containing value function entries for each state
