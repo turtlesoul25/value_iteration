@@ -12,6 +12,8 @@ def reward_func_generator(reward_states: Dict, boundary_penalty, S: Set) -> Call
     '''
     Defines a Reward function (input for value iteration) given a 
     dictionary of rewards for chosen states s from S (set of states)
+
+    Returns the reward function for a given set of reward states and penalty values
     '''
     def R(s, a):
         '''Function to calculate reward when action a is performed at state s.'''
